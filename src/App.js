@@ -1,22 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+import JaCitam from './ucim';
+import Maybe from './maybe';
+import TrecaSreca from './trecaSreca';
 
 function App() {
   return (
+   
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+      <h1>ja citam</h1>
+      <JaCitam></JaCitam>
+      
+      <h1> {Math.random()}</h1>
+      <Maybe></Maybe>
+      <button>Dugmic</button>
+      <TrecaSreca tekst="da li je ovo">ali zar ovdje nesto nece biti</TrecaSreca>
       </header>
     </div>
   );
